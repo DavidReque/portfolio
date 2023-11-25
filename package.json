@@ -10,11 +10,17 @@
   },
   "dependencies": {
     "@nextui-org/react": "^2.2.9",
+    "@react-three/drei": "^9.88.17",
+    "@react-three/fiber": "^8.15.11",
     "framer-motion": "^10.16.5",
+    "math": "^0.0.3",
     "next": "14.0.3",
     "next-themes": "^0.2.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-tilt": "^1.0.2",
+    "react-vertical-timeline-component": "^3.6.0",
+    "three": "^0.158.0"
   },
   "devDependencies": {
     "@types/node": "^20",
