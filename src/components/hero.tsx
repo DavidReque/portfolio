@@ -1,4 +1,5 @@
-import React from 'react';
+import {motion} from 'framer-motion'
+import ComputersCanvas from './canvas/ComputersCanvas';
 
 const Hero = () => {
   return (
@@ -19,6 +20,8 @@ const Hero = () => {
           </p>
         </div>
       </div>
+
+      <ComputersCanvas/>
     </section>
   );
 };
