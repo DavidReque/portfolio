@@ -1,9 +1,8 @@
-import {motion} from 'framer-motion'
 import ComputersCanvas from './canvas/ComputersCanvas';
 
 const Hero = () => {
   return (
-    <section className='relative w-full h-screen bg-cover bg-center bg-no-repeat mx-auto' style={{ backgroundImage: `url('/path/to/computer_image.jpg')` }}>
+    <section className='relative w-full h-screen bg-cover bg-center bg-no-repeat mx-auto' style={{ backgroundImage: `url('./fondo.jpg')` }}>
       <div className='absolute inset-0 top-20 max-w-7xl mx-auto px-5 flex flex-row items-start gap-5'>
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-blue-600' />
