@@ -14,9 +14,10 @@ const Hero = () => {
             Hi, I'm <span className='text-blue-600'>David</span>
           </h1>
           <p className='text-gray-300 font-medium lg:text-xl sm:text-lg xs:text-base text-sm lg:leading-10 mt-2'>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces, and web applications
-          </p>
+  Building user-friendly <br className='sm:block hidden' />
+  web interfaces
+</p>
+
         </div>
       </div>
 
