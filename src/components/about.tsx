@@ -7,7 +7,7 @@ const About = () => {
         <h2 className='text-4xl lg:text-5xl font-bold mb-6'>
           Overview
         </h2>
-        <p className='text-lg lg:text-xl leading-relaxed'>
+        <p className='text-base lg:text-lg leading-relaxed'>
           I'm a passionate web developer specializing in technologies like{' '}
           <span className='font-semibold text-blue-400'>React.js</span>,{' '}
           <span className='font-semibold text-blue-400'>Next.js</span>, and{' '}
