@@ -1,3 +1,5 @@
+import CardSkill from "./cardSkill";
+
 const About = () => {
   return (
     <section id='about' className='text-gray-300 font-light py-12 px-8 lg:px-0'>
@@ -11,6 +13,9 @@ const About = () => {
           <span className='font-semibold text-blue-400'>Next.js</span>, and{' '}
           <span className='font-semibold text-blue-400'>TypeScript</span>. My expertise revolves around building modern and dynamic web applications, with a specific focus on crafting robust and efficient user interfaces.
         </p>
+
+        <CardSkill/>
+
       </div>
     </section>
   );
