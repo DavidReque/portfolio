@@ -1,3 +1,4 @@
+import { Skills } from "./Skills";
 import CardSkill from "./cardSkill";
 
 const About = () => {
@@ -16,6 +17,7 @@ const About = () => {
 
         <CardSkill/>
 
+        <Skills/>
       </div>
     </section>
   );
