@@ -3,9 +3,10 @@ import CardSkill from "./cardSkill";
 
 const About = () => {
   return (
-    <section id='about' className='text-gray-300 font-light py-12 px-8 lg:px-0'>
+    <section id='about' className='text-gray-300 font-light'>
       <div className='max-w-4xl mx-auto'>
-        <h2 className='text-4xl lg:text-5xl font-bold mb-6'>
+        <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">About</p>
+        <h2 className={`text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]`}>
           Overview
         </h2>
         <p className='text-base lg:text-lg leading-relaxed'>
