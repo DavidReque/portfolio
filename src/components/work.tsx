@@ -1,4 +1,7 @@
+import { Button } from '@nextui-org/react';
+import Link from 'next/link';
 import React from 'react';
+import ProjectsCards from './ProjectsCards';
 
 const Work = () => {
   return (
@@ -15,7 +18,17 @@ const Work = () => {
           <span className='font-semibold text-blue-400'>Next.js</span>, and{' '}
           <span className='font-semibold text-blue-400'>TypeScript</span>. My projects range from dynamic web applications to interactive user interfaces, each representing unique challenges and innovation opportunities.
         </p>
+
+        <div className='text-center my-5'>
+        <Link href='/projects'>
+        <Button color="primary" variant="bordered">
+          View all my projects
+       </Button>
+        </Link>
+        </div>
       </div>
+
+      <ProjectsCards/>
     </section>
   );
 };
