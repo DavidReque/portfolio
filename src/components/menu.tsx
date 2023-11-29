@@ -7,9 +7,9 @@ export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
-    'About',
-    'Work',
-    'Contact'
+    {name: 'About', href: 'about'},
+    {name: 'Work', href: 'work'},
+    {name: 'Contact', href: 'contact'}
   ];
 
   return (
@@ -49,6 +49,7 @@ export default function App() {
   </NavbarItem>*/}
       </NavbarContent>
       <NavbarMenu>
+        <ul className="flex justify-center flex-col items-center">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
@@ -56,13 +57,14 @@ export default function App() {
                 index === 1 ? "primary" : 'foreground'
               }
               className="w-full"
-              href="#"
+              href={`#${item.href}`}
               size="lg"
             >
-              {item}
+              {item.name}
             </Link>
           </NavbarMenuItem>
         ))}
+        </ul>
       </NavbarMenu>
     </Navbar>
   );
