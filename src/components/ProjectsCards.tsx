@@ -3,22 +3,28 @@ import React from 'react';
 const ProjectsCards = () => {
   const projects = [
     {
-      title: 'E-commerce Platform',
-      description: 'A fully functional e-commerce platform built with React.js and Next.js.',
-      technologies: ['React.js', 'Next.js', 'Tailwind CSS'],
-      imageUrl: '/images/project-ecommerce.jpg',
+      title: 'Real Time Chat App',
+      description: 'An interactive chat application leveraging Upstash Redis as the backend database, powered by TypeScript, Next.js, and React.js. Integrates seamless Google authentication for user access control. The responsive user interface, crafted using TailwindCSS, ensures a smooth experience across devices.',
+      technologies: ['React.js', 'Next.js', 'Tailwind CSS', 'TypeScript', 'Upstash Redis'],
+      imageUrl: '/img/chat.png',
     },
     {
-        title: 'E-commerce Platform',
-        description: 'A fully functional e-commerce platform built with React.js and Next.js.',
-        technologies: ['React.js', 'Next.js', 'Tailwind CSS'],
-        imageUrl: '/images/project-ecommerce.jpg',
+        title: 'Linktree clon',
+        description: 'This is an application created with React and Firebase that functions similarly to Linktree. It allows you to create and share different social media links and also allows you to log in with Google.',
+        technologies: ['React.js', 'Firebase', 'Tailwind CSS', 'JavaScript'],
+        imageUrl: '/img/link.png',
       },
       {
-        title: 'E-commerce Platform',
-        description: 'A fully functional e-commerce platform built with React.js and Next.js.',
-        technologies: ['React.js', 'Next.js', 'Tailwind CSS'],
-        imageUrl: '/images/project-ecommerce.jpg',
+        title: 'Movie app',
+        description: 'Movie catalog project developed using TypeScript, Next.js, and Tailwind CSS, seamlessly integrating the TMDb API to access and display movie data.',
+        technologies: ['React.js', 'Typescript', 'Tailwind CSS'],
+        imageUrl: '/img/movie.png',
+      },
+      {
+        title: 'E-commerce',
+        description: 'This is an e-commerce project built using Next.js and styled with Tailwind CSS. The project features a fully functional e-commerce website with product listings, shopping cart, checkout process, and more.',
+        technologies: ['React.js', 'Nextjs', 'Tailwind CSS', 'JavaScript'],
+        imageUrl: '/img/comm.png',
       },
   ];
 
