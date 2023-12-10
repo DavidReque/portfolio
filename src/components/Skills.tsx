@@ -20,8 +20,9 @@ export const Skills = () => {
         <div className='flex flex-wrap justify-center gap-9 my-4'>
         {skills.map((skill, index) => (
           <div
+            style={{ backgroundColor: '#151030' }}
             key={index}
-            className='max-w-xs bg-gray-800 p-5 rounded-md flex flex-col items-center justify-center transform transition-transform hover:scale-105'
+            className='max-w-x p-5 rounded-md flex flex-col items-center justify-center transform transition-transform hover:scale-105'
           >
             <img src={skill.icon} alt={`${skill.name} icon`} className='w-24 h-20 mb-4 object-contain' />
             <p className='text-white text-lg font-semibold'>{skill.name}</p>
