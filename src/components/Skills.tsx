@@ -8,6 +8,7 @@ export const Skills = () => {
         { name: 'Next js', icon: '/img/next.png'},
         { name: 'Python', icon: '/img/py.png'},
         { name: 'Tailwind CSS', icon: '/img/ta.png'},
+        { name: 'Java', icon: '/img/java.png'},
       ];
 
   return (
