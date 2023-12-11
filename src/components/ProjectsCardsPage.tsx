@@ -1,8 +1,8 @@
 'use client'
 
 import ModalProject from '@/Modal';
+import projectsData from '@/app/constants/projectData';
 import { Project } from '@/app/types/types';
-import {projectsData} from '@/app/constants/projectsData'
 import { useDisclosure } from '@nextui-org/react';
 import React, { useState } from 'react';
 

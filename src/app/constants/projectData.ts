@@ -1,6 +1,6 @@
 import { Project } from "../types/types";
 
-export const projectsData: Project[] = [
+const projectsData: Project[] = [
     {
       title: 'Real Time Chat App',
       description: 'An interactive chat application leveraging Upstash Redis as the backend database, powered by TypeScript, Next.js, and React.js. Integrates seamless Google authentication for user access control. The responsive user interface, crafted using TailwindCSS, ensures a smooth experience across devices.',
@@ -34,7 +34,7 @@ export const projectsData: Project[] = [
         site: 'https://store-two-rouge.vercel.app/'
       },
       {
-        title: 'Sunset Skies',
+        title: 'Java Game',
         description: 'Sunset Skies is a Java-based game featuring an airplane navigating through a sunset sky. Players control the airplane, avoiding obstacles and balloons while flying. The game provides an immersive experience where users must maneuver the aircraft to dodge buildings, houses, and balloons, aiming to prolong their flight duration without collisions.',
         technologies: ['Java'],
         imageUrl: '/img/javaGame.png',
@@ -42,3 +42,5 @@ export const projectsData: Project[] = [
         site: ''
       },
   ];
+
+export default projectsData;
