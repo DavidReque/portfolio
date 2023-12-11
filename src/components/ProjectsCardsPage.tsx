@@ -6,7 +6,7 @@ import {projectsData} from '@/app/constants/projectsData'
 import { useDisclosure } from '@nextui-org/react';
 import React, { useState } from 'react';
 
-const ProjectsCards = () => {
+const ProjectsCardsPage = () => {
   const {isOpen, onOpen, onClose} = useDisclosure();
   const [backdrop, setBackdrop] = useState('blur')
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0)
@@ -17,7 +17,7 @@ const ProjectsCards = () => {
     onOpen();
   }
 
-  const projects: Project[] = projectsData.slice(0, 4)
+  const projects: Project[] = projectsData
 
   return (
     <div className="my-10 lg:max-w-4xl lg:mx-auto">
@@ -67,4 +67,4 @@ const ProjectsCards = () => {
   );
 };
 
-export default ProjectsCards;
+export default ProjectsCardsPage;
