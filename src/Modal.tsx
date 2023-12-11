@@ -34,7 +34,7 @@ const ModalProject: FC<ModalProjectProps> = ({
         <ModalBody className="flex flex-col md:flex-row items-center md:space-x-6">
           <img src={imageUrl} alt={title} className="w-48 h-48 object-cover rounded-lg" />
           <div className="mt-4 md:mt-0 flex-grow">
-            <p className="text-gray-600">{description}</p>
+            <p className="text-gray-600 mb-4">{description}</p>
             <ul className="mt-4">
               {technologies.map((tech, techIndex) => (
                 <li key={techIndex} className="inline-block bg-blue-500 text-white rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">
