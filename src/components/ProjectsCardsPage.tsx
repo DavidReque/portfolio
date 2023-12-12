@@ -25,7 +25,7 @@ const ProjectsCardsPage = () => {
       <div className='flex mb-8 justify-center items-center'>
       <Breadcrumbs color='secondary'>
           <BreadcrumbItem>
-            <Link href="/">Home</Link>
+            <Link href="/#work">Home</Link>
           </BreadcrumbItem>
         <BreadcrumbItem>Projects</BreadcrumbItem>
       </Breadcrumbs>
