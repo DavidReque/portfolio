@@ -3,7 +3,8 @@
 import ModalProject from '@/Modal';
 import projectsData from '@/app/constants/projectData';
 import { Project } from '@/app/types/types';
-import { useDisclosure } from '@nextui-org/react';
+import { BreadcrumbItem, Breadcrumbs, useDisclosure } from '@nextui-org/react';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const ProjectsCardsPage = () => {
@@ -21,6 +22,14 @@ const ProjectsCardsPage = () => {
 
   return (
     <div className="my-10 lg:max-w-4xl lg:mx-auto">
+      <div className='flex mb-8 justify-center items-center'>
+      <Breadcrumbs color='secondary'>
+          <BreadcrumbItem>
+            <Link href="/">Home</Link>
+          </BreadcrumbItem>
+        <BreadcrumbItem>Projects</BreadcrumbItem>
+      </Breadcrumbs>
+      </div>
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     {projects.map((project, index) => (
       <div key={index} style={{ backgroundColor: '#151030' }} className="text-white rounded-lg overflow-hidden shadow-lg relative">
