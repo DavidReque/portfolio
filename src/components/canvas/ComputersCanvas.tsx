@@ -5,7 +5,11 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
-const Computers = ({ isMobile }) => {
+interface ComputersProps {
+  isMobile: boolean;
+}
+
+const Computers = ({ isMobile }: ComputersProps) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
   return (
@@ -31,7 +35,7 @@ const Computers = ({ isMobile }) => {
 };
 
 const ComputersCanvas = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
     // Add a listener for changes to the screen size
@@ -41,7 +45,7 @@ const ComputersCanvas = () => {
     setIsMobile(mediaQuery.matches);
 
     // Define a callback function to handle changes to the media query
-    const handleMediaQueryChange = (event) => {
+    const handleMediaQueryChange = (event: MediaQueryListEvent) => {
       setIsMobile(event.matches);
     };
 

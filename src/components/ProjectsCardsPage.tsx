@@ -6,6 +6,7 @@ import { Project } from '@/app/types/types';
 import { BreadcrumbItem, Breadcrumbs, useDisclosure } from '@nextui-org/react';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const ProjectsCardsPage = () => {
   const {isOpen, onOpen, onClose} = useDisclosure();
@@ -34,11 +35,11 @@ const ProjectsCardsPage = () => {
     {projects.map((project, index) => (
       <div key={index} style={{ backgroundColor: '#151030' }} className="text-white rounded-lg overflow-hidden shadow-lg relative">
         <div onClick={() => handleOpen(index)}>
-        <img src={project.imageUrl} alt={project.title} className="w-full h-44 object-cover object-center" />
+        <Image src={project.imageUrl} alt={project.title} className="w-full h-44 object-cover object-center" />
         </div>
         <button>
         <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="absolute top-4 right-4 bg-gray-700 hover:bg-gray-800 text-white font-semibold py-2 px-2 rounded-full transition duration-300">
-          <img className='h-6 w-6' src="/img/git.png" alt="" 
+          <Image className='h-6 w-6' src="/img/git.png" alt="" 
  />
         </a>
         </button>

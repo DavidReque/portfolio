@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
+import Image from "next/image";
 
 interface ModalProjectProps {
     handleOpen: (index: number) => void
@@ -32,7 +33,7 @@ const ModalProject: FC<ModalProjectProps> = ({
       <ModalContent className="p-6">
         <ModalHeader className="text-2xl font-bold mb-4">{title}</ModalHeader>
         <ModalBody className="flex flex-col md:flex-row items-center md:space-x-6">
-          <img src={imageUrl} alt={title} className="w-48 h-48 object-cover rounded-lg" />
+          <Image src={imageUrl} alt={title} className="w-48 h-48 object-cover rounded-lg" />
           <div className="mt-4 md:mt-0 flex-grow">
             <p className="text-gray-600 mb-4">{description}</p>
             <ul className="mt-4">
@@ -58,7 +59,7 @@ const ModalProject: FC<ModalProjectProps> = ({
           )}
 
 <a className="inline-block p-2 bg-gray-900 rounded-full transition duration-300 hover:bg-gray-800" href={githubLink} target="_blank" rel="noopener noreferrer">
-  <img className='h-6 w-6' src="/img/git.png" alt="" />
+  <Image className='h-6 w-6' src="/img/git.png" alt="" />
 </a>
 
         </ModalFooter>

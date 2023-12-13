@@ -10,7 +10,7 @@ const About = () => {
           Overview
         </h2>
         <p className='text-base lg:text-lg leading-relaxed'>
-          I'm a passionate web developer specializing in technologies like{' '}
+          I&apos;m a passionate web developer specializing in technologies like{' '}
           <span className='font-semibold text-blue-400'>React.js</span>,{' '}
           <span className='font-semibold text-blue-400'>Next.js</span>, and{' '}
           <span className='font-semibold text-blue-400'>TypeScript</span>. My expertise revolves around building modern and dynamic web applications, with a specific focus on crafting robust and efficient user interfaces.

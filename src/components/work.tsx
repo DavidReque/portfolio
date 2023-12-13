@@ -13,7 +13,7 @@ const Work = () => {
         </h2>
 
         <p className='text-base lg:text-lg leading-relaxed'>
-          Throughout my journey, I've showcased expertise in technologies like{' '}
+          Throughout my journey, I&apos;ve showcased expertise in technologies like{' '}
           <span className='font-semibold text-blue-400'>React.js</span>,{' '}
           <span className='font-semibold text-blue-400'>Next.js</span>, and{' '}
           <span className='font-semibold text-blue-400'>TypeScript</span>. My projects range from dynamic web applications to interactive user interfaces, each representing unique challenges and innovation opportunities.

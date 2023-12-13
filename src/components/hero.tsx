@@ -11,7 +11,7 @@ const Hero = () => {
 
         <div>
           <h1 className='font-black text-white lg:text-6xl sm:text-5xl xs:text-4xl text-3xl lg:leading-12 mt-2'>
-            Hi, I'm <span className='text-blue-600'>David</span>
+            Hi, I&apos;m <span className='text-blue-600'>David</span>
           </h1>
           <p className='text-gray-300 font-medium lg:text-xl sm:text-lg xs:text-base text-sm lg:leading-10 mt-2'>
   Building user-friendly <br className='sm:block hidden' />
