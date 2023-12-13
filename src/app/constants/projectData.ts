@@ -41,6 +41,38 @@ const projectsData: Project[] = [
         githubLink: 'https://github.com/DavidReque/sunset-skies-tower-scape',
         site: ''
       },
+      {
+        title: 'Todo TypeScript',
+        description: 'Project management tool built using React and Vite, it offers convenient filters for sorting pending and completed tasks',
+        technologies: ['TypeScript', 'React Js', 'Vite'],
+        imageUrl: '/img/todo.png',
+        githubLink: 'https://github.com/DavidReque/todo-typescript',
+        site: 'https://todo-typescript-zeta.vercel.app/'
+      },
+      {
+        title: 'Unplash photos',
+        description: 'Gallery photos using Unplash API',
+        technologies: ['React js', 'JavaScript', 'Next js'],
+        imageUrl: '/img/gall.png',
+        githubLink: 'https://github.com/DavidReque/next-api',
+        site: 'https://next-api-orcin.vercel.app/'
+      },
+      {
+        title: 'Chat firebase',
+        description: 'This is a chat application project developed with React and Firebase.',
+        technologies: ['React js', 'JavaScript', 'Firebase'],
+        imageUrl: '/img/chatf.png',
+        githubLink: 'https://github.com/DavidReque/chat-firebase',
+        site: ''
+      },
+      {
+        title: 'tic-tac-toe',
+        description: 'React-Tac-Toe" is a classic Tic-Tac-Toe game crafted with React and JavaScript. Enjoy the timeless fun of this two-player game, where users take turns marking their X or O on a 3x3 grid',
+        technologies: ['React js', 'JavaScript', 'Vite'],
+        imageUrl: '/img/tic.png',
+        githubLink: 'https://github.com/DavidReque/tic-tac-toe',
+        site: 'https://tictactoedavid.netlify.app/'
+      },
   ];
 
 export default projectsData;
