@@ -4,7 +4,6 @@ import ModalProject from '@/Modal';
 import projectsData from '@/app/constants/projectData';
 import { Project } from '@/app/types/types';
 import { useDisclosure } from '@nextui-org/react';
-import Image from 'next/image';
 import React, { useState } from 'react';
 
 const ProjectsCards = () => {
@@ -26,11 +25,11 @@ const ProjectsCards = () => {
     {projects.map((project, index) => (
       <div key={index} style={{ backgroundColor: '#151030' }} className="text-white rounded-lg overflow-hidden shadow-lg relative">
         <div onClick={() => handleOpen(index)}>
-        <Image src={project.imageUrl} alt={project.title} className="w-full h-44 object-cover object-center" />
+        <img src={project.imageUrl} alt={project.title} className="w-full h-44 object-cover object-center" />
         </div>
         <button>
         <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="absolute top-4 right-4 bg-gray-700 hover:bg-gray-800 text-white font-semibold py-2 px-2 rounded-full transition duration-300">
-          <Image className='h-6 w-6' src="/img/git.png" alt="" 
+          <img className='h-6 w-6' src="/img/git.png" alt="" 
  />
         </a>
         </button>

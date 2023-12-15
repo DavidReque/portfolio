@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
+import { Card, CardHeader, CardBody } from "@nextui-org/react";
 
 const CardSkill = () => {
   return (
@@ -11,7 +11,7 @@ const CardSkill = () => {
     </CardHeader>
     <CardBody className="overflow-visible py-2 flex justify-center">
       <div className="flex justify-center items-center w-full h-full">
-        <Image
+        <img
           alt="Card background"
           className="object-cover w-16 h-16"
           src="/img/dev.png"
@@ -26,7 +26,7 @@ const CardSkill = () => {
     </CardHeader>
     <CardBody className="overflow-visible py-2 flex justify-center">
       <div className="flex justify-center items-center w-full h-full">
-        <Image
+        <img
           alt="Card background"
           className="object-cover w-16 h-16"
           src="/img/web.png"
@@ -41,7 +41,7 @@ const CardSkill = () => {
     </CardHeader>
     <CardBody className="overflow-visible py-2 flex justify-center">
       <div className="flex justify-center items-center w-full h-full">
-        <Image
+        <img
           alt="Card background"
           className="object-cover w-16 h-16"
           src="/img/des.png"
