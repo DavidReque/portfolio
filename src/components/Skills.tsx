@@ -9,6 +9,7 @@ export const Skills = () => {
         { name: 'Python', icon: '/img/py.png'},
         { name: 'Tailwind CSS', icon: '/img/ta.png'},
         { name: 'Java', icon: '/img/java.png'},
+        { name: 'TypeScript', icon: '/img/type.png'},
       ];
 
   return (

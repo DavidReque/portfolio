@@ -13,7 +13,7 @@ const CardSkill = () => {
       <div className="flex justify-center items-center w-full h-full">
         <img
           alt="Card background"
-          className="object-cover w-16 h-16"
+          className="object-cover w-16 h-16 rounded-none"
           src="/img/dev.png"
         />
       </div>
@@ -28,7 +28,7 @@ const CardSkill = () => {
       <div className="flex justify-center items-center w-full h-full">
         <img
           alt="Card background"
-          className="object-cover w-16 h-16"
+          className="object-cover w-16 h-16 rounded-none"
           src="/img/web.png"
         />
       </div>
@@ -43,7 +43,7 @@ const CardSkill = () => {
       <div className="flex justify-center items-center w-full h-full">
         <img
           alt="Card background"
-          className="object-cover w-16 h-16"
+          className="object-cover w-16 h-16 rounded-none"
           src="/img/des.png"
         />
       </div>
