@@ -8,7 +8,7 @@ import { slideIn } from '@/utils/motion';
 
 export const Contact = () => {
   return (
-    <section className='text-gray-300 font-light mt-32'>
+    <section className='text-gray-300 font-light mt-32 mb-16'>
       <div className="lg:max-w-4xl lg:mx-auto">
       <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">Contact</p>
       <h2 className={`text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]`}>
