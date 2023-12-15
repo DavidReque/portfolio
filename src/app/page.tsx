@@ -8,16 +8,19 @@ import Work from "@/components/work";
 export default function Home() {
   return (
     <main>
-        <Menu/>
-        <div className="px-8 lg:px-0">
-          <Hero/>
-          <About/>
-          <Work/>
-        <div>
-          <StarsCanvas/>
-          <Contact/>
+      <Menu />
+      <div className="px-8 lg:px-0">
+        <div className="relative z-0">
+          <StarsCanvas />
+          <Hero />
         </div>
+        <About />
+        <Work />
+        <div className="relative z-0 py-16">
+          <StarsCanvas />
+          <Contact />
         </div>
+      </div>
     </main>
-  )
+  );
 }
