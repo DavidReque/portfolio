@@ -1,7 +1,8 @@
 'use client'
 
 import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, NavbarMenuToggle, NavbarMenu, NavbarMenuItem} from "@nextui-org/react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Button, NavbarMenuToggle, NavbarMenu, NavbarMenuItem} from "@nextui-org/react";
+import Link from "next/link";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -20,7 +21,9 @@ export default function App() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          Logo
+         <Link href='/'>
+          <img className="w-7 h-7" src="/img/logo.png" alt="Logo" />
+         </Link>
         </NavbarBrand>
       </NavbarContent>
 
