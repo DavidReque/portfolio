@@ -1,6 +1,13 @@
-import React from 'react'
+'use client'
+
+import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
 
 export const Skills = () => {
+
+  const { ref, inView } = useInView({
+    triggerOnce: true, // La animación se activará una sola vez
+  });
 
     const skills = [
         { name: 'React.js', icon: '/img/react.png'},
@@ -14,11 +21,19 @@ export const Skills = () => {
 
   return (
     <>
-        <h2 className={`text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center`}>
+        <motion.h2 className={`text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center`}
+           ref={ref}
+           initial={{ opacity: 0, y: -100 }}
+           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -100 }}
+           transition={{ duration: 1 }}
+        >
         Tech Skills.
-        </h2>
+        </motion.h2>
 
-        <div className='flex flex-wrap justify-center gap-9 my-4'>
+        <motion.div  className='flex flex-wrap justify-center gap-9 my-4' ref={ref}
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -100 }}
+        transition={{ duration: 1 }}>
         {skills.map((skill, index) => (
           <div
             style={{ backgroundColor: '#151030' }}
@@ -29,7 +44,7 @@ export const Skills = () => {
             <p className='text-white text-lg font-semibold'>{skill.name}</p>
           </div>
         ))}
-      </div>
+      </motion.div>
 
     </>
   )

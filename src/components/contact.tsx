@@ -4,11 +4,21 @@ import { Button, Input, Textarea } from '@nextui-org/react'
 import React from 'react'
 import { motion } from "framer-motion";
 import EarthCanvas from './canvas/EarthCanvas';
+import { useInView } from 'react-intersection-observer';
 import { slideIn } from '@/utils/motion';
 
 export const Contact = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // La animación se activará una sola vez
+  });
+
   return (
-    <section className='mt-20 bg-transparent'>
+    <motion.section className='mt-20 bg-transparent'
+      ref={ref}
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
+      transition={{ duration: 1 }}
+    >
       <div className="lg:max-w-4xl lg:mx-auto">
       <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">Contact</p>
       <h2 className={`text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]`}>
@@ -55,6 +65,7 @@ export const Contact = () => {
       </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
+

@@ -1,9 +1,22 @@
+'use client'
+
 import React from "react";
 import { Card, CardHeader, CardBody } from "@nextui-org/react";
+import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
 
 const CardSkill = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // La animación se activará una sola vez
+  });
+
   return (
-    <div className="my-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <motion.div className="my-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+ref={ref}
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -100 }}
+      transition={{ duration: 1 }}
+    >
   {/* Card 1 */}
   <Card className="py-4 flex justify-center items-center">
     <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
@@ -48,7 +61,7 @@ const CardSkill = () => {
         />
       </div>
     </CardBody>
-  </Card></div>
+  </Card></motion.div>
   );
 };
 
