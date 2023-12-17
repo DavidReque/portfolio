@@ -6,8 +6,14 @@ import { Project } from '@/app/types/types';
 import { BreadcrumbItem, Breadcrumbs, useDisclosure } from '@nextui-org/react';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
+import { slideIn } from '@/utils/motion';
+import { motion } from "framer-motion";
 
 const ProjectsCardsPage = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // La animación se activará una sola vez
+  });
   const {isOpen, onOpen, onClose} = useDisclosure();
   const [backdrop, setBackdrop] = useState('blur')
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0)
@@ -21,7 +27,10 @@ const ProjectsCardsPage = () => {
   const projects: Project[] = projectsData
 
   return (
-    <div className="my-10 lg:max-w-4xl lg:mx-auto">
+    <motion.div className="my-10 lg:max-w-4xl lg:mx-auto" ref={ref}
+    initial={{ opacity: 0, x: -100 }}
+    animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
+    transition={{ duration: 1 }}>
       <div className='flex mb-8 justify-center items-center'>
       <Breadcrumbs color='secondary'>
           <BreadcrumbItem>
@@ -72,7 +81,7 @@ const ProjectsCardsPage = () => {
     isOpen={isOpen}
     onClose={onClose}
   />
-</div>
+</motion.div>
   );
 };
 
