@@ -45,27 +45,23 @@ export default function App() {
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        {/*<NavbarItem>
+        <NavbarItem>
           <Button as={Link} color="primary" href="#" variant="flat">
             Sign Up
           </Button>
-  </NavbarItem>*/}
+        </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
         <ul className="flex justify-center flex-col items-center">
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              color={
-                index === 1 ? "primary" : 'foreground'
-              }
-              className="w-full"
-              href={`#${item.href}`}
-              size="lg"
-            >
-              {item.name}
-            </Link>
-          </NavbarMenuItem>
+      <NavbarMenuItem key={`${item}-${index}`}>
+        <Link
+          href={`#${item.href}`}>
+            <a className={`w-full ${index === 1 ? "text-primary" : 'text-foreground'} text-lg`}>
+        {item.name}
+      </a>
+        </Link>
+      </NavbarMenuItem>
         ))}
         </ul>
       </NavbarMenu>
