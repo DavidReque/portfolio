@@ -27,7 +27,9 @@ export const Contact = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <div style={{ backgroundColor: '#151030' }} className="p-6 rounded-lg shadow-md">
             <h3 className="text-2xl font-semibold text-gray-200 mb-4">Send me a message</h3>
-            <form>
+            <form onSubmit={(e) => {
+              e.preventDefault()
+            }}>
               <div className="mb-4">
               <Input 
                 key='primary'
