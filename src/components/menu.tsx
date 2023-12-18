@@ -39,7 +39,7 @@ export default function App() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="#contact">
             Contact
           </Link>
         </NavbarItem>
@@ -57,9 +57,9 @@ export default function App() {
       <NavbarMenuItem key={`${item}-${index}`}>
         <Link
           href={`#${item.href}`}>
-            <a className={`w-full ${index === 1 ? "text-primary" : 'text-foreground'} text-lg`}>
+            <span className={`w-full ${index === 1 ? "text-primary" : 'text-foreground'} text-lg`}>
         {item.name}
-      </a>
+      </span>
         </Link>
       </NavbarMenuItem>
         ))}
