@@ -13,7 +13,7 @@ export const Contact = () => {
   });
 
   return (
-    <motion.section id='contact' className='mt-20 bg-transparent'
+    <motion.section id='contact' className='mx-8 mt-20 bg-transparent'
       ref={ref}
       initial={{ opacity: 0, x: -100 }}
       animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
