@@ -5,8 +5,14 @@ import projectsData from '@/app/constants/projectData';
 import { Project } from '@/app/types/types';
 import { useDisclosure } from '@nextui-org/react';
 import React, { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
+import { motion } from "framer-motion";
 
 const ProjectsCards = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // La animación se activará una sola vez
+  });
+
   const {isOpen, onOpen, onClose} = useDisclosure();
   const [backdrop, setBackdrop] = useState('blur')
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0)
@@ -21,7 +27,11 @@ const ProjectsCards = () => {
 
   return (
     <div className="my-10 lg:max-w-4xl lg:mx-auto">
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  <motion.div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+  ref={ref}
+  initial={{ opacity: 0, x: -100 }}
+  animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
+  transition={{ duration: 1 }}>
     {projects.map((project, index) => (
       <div key={index} style={{ backgroundColor: '#151030' }} className="text-white rounded-lg overflow-hidden shadow-lg relative">
         <div onClick={() => handleOpen(index)}>
@@ -49,7 +59,7 @@ const ProjectsCards = () => {
         </div>
       </div>
     ))}
-  </div>
+  </motion.div>
 
   <ModalProject 
     githubLink={projects[selectedProjectIndex].githubLink}

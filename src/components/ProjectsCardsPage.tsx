@@ -7,7 +7,6 @@ import { BreadcrumbItem, Breadcrumbs, useDisclosure } from '@nextui-org/react';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { slideIn } from '@/utils/motion';
 import { motion } from "framer-motion";
 
 const ProjectsCardsPage = () => {
