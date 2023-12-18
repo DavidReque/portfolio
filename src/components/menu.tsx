@@ -46,8 +46,8 @@ export default function App() {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
+          <Button as={Link} color="secondary" href="./assets/Curriculum David Requeno.pdf" variant="flat">
+            CV
           </Button>
         </NavbarItem>
       </NavbarContent>
