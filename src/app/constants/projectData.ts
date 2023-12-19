@@ -3,7 +3,7 @@ import { Project } from "../types/types";
 const projectsData: Project[] = [
     {
       title: 'Real Time Chat App',
-      description: 'An interactive chat application leveraging Upstash Redis as the backend database, powered by TypeScript, Next.js, and React.js. Integrates seamless Google authentication for user access control. The responsive user interface, crafted using TailwindCSS, ensures a smooth experience across devices.',
+      description: 'An interactive chat application leveraging Upstash Redis as the backend database, powered by TypeScript, Next.js, and React.js. Integrates seamless Google authentication for user access control. The responsive user interface.',
       technologies: ['React.js', 'Next.js', 'Tailwind CSS', 'TypeScript', 'Upstash Redis'],
       imageUrl: '/img/chat.png',
       githubLink: 'https://github.com/DavidReque/conex-chat',
@@ -35,7 +35,7 @@ const projectsData: Project[] = [
       },
       {
         title: 'Java Game',
-        description: 'Sunset Skies is a Java-based game featuring an airplane navigating through a sunset sky. Players control the airplane, avoiding obstacles and balloons while flying. The game provides an immersive experience where users must maneuver the aircraft to dodge buildings, houses, and balloons, aiming to prolong their flight duration without collisions.',
+        description: 'Sunset Skies is a Java-based game featuring an airplane navigating through a sunset sky. Players control the airplane, avoiding obstacles and balloons while flying.',
         technologies: ['Java'],
         imageUrl: '/img/javaGame.png',
         githubLink: 'https://github.com/DavidReque/sunset-skies-tower-scape',
@@ -67,7 +67,7 @@ const projectsData: Project[] = [
       },
       {
         title: 'tic-tac-toe',
-        description: 'React-Tac-Toe" is a classic Tic-Tac-Toe game crafted with React and JavaScript. Enjoy the timeless fun of this two-player game, where users take turns marking their X or O on a 3x3 grid',
+        description: 'React-Tac-Toe" is a classic Tic-Tac-Toe game crafted with React and JavaScript.',
         technologies: ['React js', 'JavaScript', 'Vite'],
         imageUrl: '/img/tic.png',
         githubLink: 'https://github.com/DavidReque/tic-tac-toe',
