@@ -35,7 +35,7 @@ ref={ref}
 
   <Card className="py-4 flex justify-center items-center">
     <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
-      <h4 className="font-bold text-large text-center">Web developer</h4>
+      <h4 className="font-bold text-large text-center">Desarrollador web</h4>
     </CardHeader>
     <CardBody className="overflow-visible py-2 flex justify-center">
       <div className="flex justify-center items-center w-full h-full">
@@ -50,7 +50,7 @@ ref={ref}
   
   <Card className="py-4 flex justify-center items-center">
     <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
-      <h4 className="font-bold text-large text-center">UI/UX Designer</h4>
+      <h4 className="font-bold text-large text-center">Diseñador UI/UX</h4>
     </CardHeader>
     <CardBody className="overflow-visible py-2 flex justify-center">
       <div className="flex justify-center items-center w-full h-full">

@@ -27,7 +27,7 @@ export const Skills = () => {
            animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -100 }}
            transition={{ duration: 1 }}
         >
-        Tech Skills.
+        Habilidades Técnicas.
         </motion.h2>
 
         <motion.div  className='flex flex-wrap justify-center gap-9 my-4' ref={ref}
