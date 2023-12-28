@@ -46,7 +46,7 @@ export default function App() {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} color="secondary" href="https://docs.google.com/document/d/1xNjgeBZxAEsPd8pXOF0jhqkA3wud2yO-6E3sFZAC3lM/edit" variant="flat">
+          <Button as={Link} color="secondary" href="./assets/CV David Requeno.pdf" variant="flat">
           {/*./assets/Curriculum David Requeno.pdf*/}
             CV
           </Button>
