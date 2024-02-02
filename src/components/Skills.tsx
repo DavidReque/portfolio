@@ -17,6 +17,7 @@ export const Skills = () => {
         { name: 'Tailwind CSS', icon: '/img/ta.png'},
         { name: 'Java', icon: '/img/java.png'},
         { name: 'TypeScript', icon: '/img/type.png'},
+        { name: 'FastAPI', icon: '/img/fastapi.png'},
       ];
 
   return (
