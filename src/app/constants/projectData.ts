@@ -73,6 +73,14 @@ const projectsData: Project[] = [
         githubLink: 'https://github.com/DavidReque/tic-tac-toe',
         site: 'https://tictactoedavid.netlify.app/'
       },
+      {
+        title: 'CRUD con FastAPI',
+        description: 'FARM CRUD',
+        technologies: ['React js', 'FastAPI', 'Python', 'Vite', 'MongoDB'],
+        imageUrl: '/img/task.png',
+        githubLink: 'https://github.com/DavidReque/FARM-CRUD',
+        site: ''
+      },
   ];
 
 export default projectsData;
