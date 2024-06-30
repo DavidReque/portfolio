@@ -89,6 +89,14 @@ const projectsData: Project[] = [
         githubLink: 'https://github.com/DavidReque/FARM-CRUD',
         site: ''
       },
+      {
+        title: 'Ejercicios de LeetCode',
+        description: 'Resolución de problemas de LeetCode',
+        technologies: ['C++', 'TypeScript', 'Python', 'C', 'JavaScript'],
+        imageUrl: '/img/leet.jpg',
+        githubLink: 'https://github.com/DavidReque/Retos-Diarios',
+        site: ''
+      },
   ];
 
 export default projectsData;

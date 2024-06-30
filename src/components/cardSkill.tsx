@@ -20,7 +20,7 @@ ref={ref}
   {/* Card 1 */}
   <Card className="py-4 flex justify-center items-center">
     <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
-      <h4 className="font-bold text-large text-center">Frontend developer</h4>
+      <h4 className="font-bold text-large text-center">Full Stack developer</h4>
     </CardHeader>
     <CardBody className="overflow-visible py-2 flex justify-center">
       <div className="flex justify-center items-center w-full h-full">

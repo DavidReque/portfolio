@@ -17,8 +17,8 @@ const Hero = () => {
             Hola, soy <span className='text-blue-600'>David</span>
           </h1>
           <p className='text-gray-300 font-medium lg:text-xl sm:text-lg xs:text-base text-sm lg:leading-10 mt-2'>
-          Construyendo interfaces web amigables <br className='sm:block hidden' />
-          para el usuario
+          Desarrollando soluciones web completas, <br className='sm:block hidden' />
+          desde el frontend hasta el backend
 </p>
 
         </div>

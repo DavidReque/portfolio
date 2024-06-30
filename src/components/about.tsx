@@ -23,10 +23,11 @@ const About = () => {
           Resumen
         </h2>
         <p className='text-base lg:text-lg leading-relaxed'>
-  Como estudiante de Ingeniería en Computación, estoy constantemente explorando nuevas tecnologías y aplicando mis conocimientos teóricos en proyectos prácticos. Además, soy un desarrollador web apasionado especializado en tecnologías como{' '}
-  <span className='font-semibold text-blue-400'>React.js</span>,{' '}
-  <span className='font-semibold text-blue-400'>Next.js</span>, y{' '}
-  <span className='font-semibold text-blue-400'>TypeScript</span>. Mi experiencia se centra en la construcción de aplicaciones web modernas y dinámicas, con un enfoque específico en la creación de interfaces de usuario robustas y eficientes.
+        Como estudiante de Ingeniería en Computación, estoy constantemente explorando nuevas tecnologías y aplicando mis conocimientos teóricos en proyectos prácticos. Soy un desarrollador web fullstack apasionado, especializado en tecnologías como{' '}
+  <span className='font-semibold text-blue-400'>React js</span>,{' '}
+  <span className='font-semibold text-blue-400'>Node js</span>, {' '}
+  <span className='font-semibold text-blue-400'>Express js</span>, y{' '}
+  <span className='font-semibold text-blue-400'>Next js</span>. Mi experiencia abarca tanto el desarrollo frontend, creando interfaces de usuario robustas y eficientes, como el backend, construyendo APIs y gestionando bases de datos para ofrecer soluciones web completas.
 </p>
         <CardSkill/>
 

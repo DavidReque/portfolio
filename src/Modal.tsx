@@ -37,7 +37,7 @@ const ModalProject: FC<ModalProjectProps> = ({
             <p className="text-gray-600 mb-4">{description}</p>
             <ul className="mt-4">
               {technologies.map((tech, techIndex) => (
-                <li key={techIndex} className="inline-block bg-blue-500 text-white rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">
+                <li key={techIndex} className="inline-block bg-gradient-to-br from-blue-950 via-blue-950 border-blue-950 text-white rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">
                   {tech}
                 </li>
               ))}

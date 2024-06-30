@@ -17,6 +17,8 @@ export const Skills = () => {
     { name: 'React.js', icon: '/img/react.png'},
     { name: 'Next js', icon: '/img/next.png'},
     { name: 'Node JS', icon: '/img/node.png'},
+    { name: 'MySQL', icon: '/img/mysql.png'},
+    { name: 'PostgreSQL', icon: '/img/post.png'},
     { name: 'Java', icon: '/img/java.png'},
     { name: 'FastAPI', icon: '/img/fastapi.png'},
     { name: 'React Native', icon: '/img/react.png'},
