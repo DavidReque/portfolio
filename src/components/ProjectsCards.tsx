@@ -33,7 +33,7 @@ const ProjectsCards = () => {
   animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
   transition={{ duration: 1 }}>
     {projects.map((project, index) => (
-      <div key={index} style={{ backgroundColor: '#151030' }} className="text-white rounded-lg overflow-hidden shadow-lg relative">
+      <div key={index} style={{ backgroundColor: '#151030' }} className="text-white rounded-lg overflow-hidden shadow-lg relative bg-gradient-to-br from-blue-950 via-blue-950 border-blue-950" >
         <div onClick={() => handleOpen(index)}>
         <img src={project.imageUrl} alt={project.title} className="w-full h-44 object-cover object-center" />
         </div>
@@ -50,7 +50,7 @@ const ProjectsCards = () => {
             {project.technologies.map((tech, techIndex) => (
               <span
                 key={techIndex}
-                className="px-2 py-1 bg-blue-500 text-white rounded-md text-xs font-semibold"
+                className="px-2 py-1 bg-gradient-to-br from-blue-500 via-blue-900 to-gray-900 border border-gray-800 text-white rounded-md text-xs font-semibold"
               >
                 {tech}
               </span>

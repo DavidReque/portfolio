@@ -50,6 +50,14 @@ const projectsData: Project[] = [
         site: 'https://todo-typescript-zeta.vercel.app/'
       },
       {
+        title: 'Task Mobile App',
+        description: 'Esta es una aplicación de administración de tareas creada con Expo y Firebase, creada usando create-expo-app. La aplicación permite a los usuarios gestionar sus tareas de manera eficiente con una interfaz de usuario intuitiva.',
+        technologies: ['TypeScript', 'React Native', 'Expo', 'Firebase'],
+        imageUrl: '/img/tasks.jpeg',
+        githubLink: 'https://github.com/DavidReque/task-app-mobile',
+        site: ''
+      },
+      {
         title: 'Fotos de Unplash',
         description: 'Galería de fotos utilizando la API de Unplash',
         technologies: ['React js', 'JavaScript', 'Next js'],
