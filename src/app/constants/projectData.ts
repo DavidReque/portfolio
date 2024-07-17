@@ -58,12 +58,12 @@ const projectsData: Project[] = [
         site: ''
       },
       {
-        title: 'Fotos de Unplash',
-        description: 'Galería de fotos utilizando la API de Unplash',
-        technologies: ['React js', 'JavaScript', 'Next js'],
-        imageUrl: '/img/gall.png',
-        githubLink: 'https://github.com/DavidReque/next-api',
-        site: 'https://next-api-orcin.vercel.app/'
+        title: 'PDF Automation Tool',
+        description: 'PDF Automation Tool es una herramienta que permite extraer información clave de documentos PDF, como facturas o contratos, utilizando modelos de visión artificial como LayoutLM. La aplicación incluye una interfaz web para cargar archivos PDF y ver los resultados de la extracción de datos.',
+        technologies: ['React js', 'TypeScript', 'Node JS', 'Express'],
+        imageUrl: '/img/pdfe.png',
+        githubLink: 'https://github.com/DavidReque/pdf-automation-tool',
+        site: 'https://pdf-automation-tool.vercel.app/'
       },
       {
         title: 'Chat con Firebase',
